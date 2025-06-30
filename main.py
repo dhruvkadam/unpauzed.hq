@@ -10,7 +10,7 @@ import os
 # Load OpenAI API key from environment
 openai.api_key = os.getenv("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")
 
-app = FastAPI(),
+app = FastAPI()
 
 # Allow frontend access
 app.add_middleware(
