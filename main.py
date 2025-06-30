@@ -22,7 +22,7 @@ app.add_middleware(
 )
 
 # Load Google Sheet data
-def load_sheet(sheet_name='Sheet1'):
+def load_sheet(sheet_name='SportVot Play Venue Mapping Details'):
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
     creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
     client = gspread.authorize(creds)
